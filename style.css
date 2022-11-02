@@ -4,19 +4,82 @@ body{
     padding: 0;
     background-color: white;
     color: white;
-    /* font-size: 30px; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    box-sizing: border-box;
-    /* width: 94vw; */
+    box-sizing: border-box; 
 }
-.sect1 h2{
-    text-align: left;
-    line-height: 58px;
-    font-size: 48px;
+/* ....................... Start Nav Section .....................*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+    position: sticky;
+    z-index: 100;
+}
+.logo{
+    padding-left: 40px;
+}
+.fabar i{
+    color: black;
+    font-size: 25px;
+    display: none;
+}
+.liens .lien,li{
+   display: inline-block;
+   padding: 5px;
+   margin: 5px 20px;
+font-size: 18px;
+font-weight: 400;
+font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.liens .lien li a{
+    text-decoration: none;
+    color:#677B8C ;
+ }
+.liens .lien li a i{
+    color:#5e6d7a ;
+ }
+.liens .lien li a:hover ,.liens .lien li a i:hover{
+    color:rgb(179, 189, 197) ;
+ }
+ 
+/* ....................... End Nav Section.....................*/
+/* ....................... start Navbar Section.....................*/
+.navbar{
+    position: absolute;
+    background-color: white;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: right;
+   width: 100%;
+   color: #5e6d7a;
+   border-top: 1px solid rgb(70, 70, 70);
+   padding: 20px 0px;
+ transform: translateY(-150%);
+ 
+ /* display: none; */
+ z-index: 100;
+}
+/* #navbar4{
+    display: none;
+}  */
+.navbar .liens2 ul li,.navbar .liens2 ul li a{
+    display: block;
+    text-decoration: none;
+    color:  rgb(70, 70, 70) ;
+}
+ .navbar h2{
+    width: 70px;
+    font-size: 30px;
     font-weight: 500;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 3px;
+}
+.navbar .liens2 ul li a:hover{
+   color: rgb(179, 189, 197) ;
 }
 
+/* ....................... End Navbar Section.....................*/
+/* ....................... Start Section One 1.....................*/
 .sect1{
     background: url(./imag4.jpg);
     background-size:cover;
@@ -24,15 +87,26 @@ body{
     background-position: center;
     background-position-y: bottom;
     padding: 2rem;
-    height: 106vh;
+     height: 80vh; 
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     flex-direction: column;
 }
-.sect1 .cont{
-    width: 37%;
-    margin: 0;
+.cont h2{
+    position: relative;
+    text-align: left;
+    line-height: 58px;
+    font-size: 48px;
+    font-weight: 500;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.cont{
+    /* width: 39%; */
+    margin-right: 50%;
     padding: 60px 80px;
+    position: absolute;
+    top: 15%;
+
 }
 .cont h3>a{
     text-decoration: none;
@@ -40,6 +114,14 @@ body{
     font-size: 16px;
     font-weight: 400;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.buttons{ 
+    margin: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .buttons input{
  background-color: rgba(128, 128, 128, 0.731);
@@ -53,42 +135,37 @@ body{
 background-color: white;
     color: white;
 }
-.sect1 .buttons{ 
-    margin: 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.circle{
-    width: 40px;
-    height: 40px;
-    border: 1px solid rgb(152, 152, 152);
-    border-radius: 50%;
-margin-right: 10px;
-position: relative;
-}
 .link{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 195px;
 }
-.link:hover,
-.circle:hover,
-.cont a:hover{
-color: rgb(243, 80, 80);
-border-color: rgb(230, 97, 97);
+.circle{
+    width: 40px;
+    height: 40px;
+    border: 1px solid gainsboro;
+    border-radius: 50%;
+margin-right: 10px;
+position: relative;
+cursor: pointer;
+
 }
 .arrow{
- position: absolute;
- top: 20%;
- left: 30%;
-font-size: 18px;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+   font-size: 18px;
+   }
+.cont .link:hover,
+.cont .circle:hover,
+.cont a:hover{
+color: gainsboro;
+border-color: gainsboro;
 }
+/* ....................... End Section One 1.....................*/
+/* ....................... Start Section Two 2.....................*/
 .sect2{
-   
     padding: 2rem; 
     text-align: center;
     background-color: white;
@@ -96,3 +173,45 @@ font-size: 18px;
     margin: 0;
     box-sizing: border-box;
 }
+
+/* ....................... End Section Two 2.....................*/
+
+/*.............................Media Qr......................*/
+@media screen and (max-width:890px){
+    .fabar i{
+        display: block;
+    }
+    .liens{
+        display: none;
+    }
+
+.sect1{
+  height:15vh;
+  padding: 40px;
+    }
+.cont{
+      position: relative;
+      background-color: aliceblue;
+      margin-right: 0;
+      padding: 40px;
+    }
+    .cont h2{
+        font-size: 30px;
+    }
+.buttons{ 
+        padding-top: 120px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+.sect2{
+    padding: 40px;
+}
+
+}
+
+
+

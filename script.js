@@ -80,6 +80,137 @@ function oussama() {
     document.querySelector(".circle").style.color = "white";
     document.querySelector(".cont a").style.color = "white";
   });
+   };
+  oussama();
+/* ....................... start Navbar Section.....................*/
+var dev = document.getElementById("dev");
+var doc=document.querySelector(".Doc");
+var blog=document.querySelector(".Blog");
+var more=document.querySelector(".More");
+var navbar1=document.querySelector(".navbar");
+var navbar2=document.querySelector(".navbar2");
+var navbar3=document.querySelector(".navbar3");
+var navbar4=document.querySelector("#navbar4");
+var nav= document.querySelector('.logo');
+var open= true;
+var open=true;
+function Open() {
+       dev.addEventListener("click",()=>{
+   document.getElementById("navbar4").style.transform ="translateY(0%)" });
+   
+   nav.addEventListener("click",()=>{
+   document.getElementById("navbar4").style.transform ="scaleY(0%)" });      
+    
+   section.addEventListener("click",()=>{
+        document.getElementById("navbar4").style.transform ="scaleY(0%)"; 
+    });  
+}
+ Open();
+
+
+// Navbar2.style.display="none";
+    // Navbar3.style.display="none";
+    // Navbar4.style.display="none";
+//     Navbar2.classList.contains("close");
+//    Navbar3.classList.contains("close");
+//    Navbar4.classList.contains("close"); 
+
+
+  
+
+
+
+
+
+
+
+/* ....................... End Navbar Section.....................*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   // setInterval(() => {
 
@@ -109,6 +240,6 @@ function oussama() {
   //       section.style.backgroundSize='cover';
   //     }, 36000);
   // }, 20000);
-}
 
-oussama();
+
+
