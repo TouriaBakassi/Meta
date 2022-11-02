@@ -101,9 +101,20 @@ function Open() {
    nav.addEventListener("click",()=>{
    document.getElementById("navbar4").style.transform ="scaleY(0%)" });      
     
-   section.addEventListener("click",()=>{
+   
+    doc.addEventListener("click",()=>{
+        document.getElementById("navbar2").style.transform ="translateY(0%)" 
+    });
+    doc.addEventListener("click",()=>{
+            document.getElementById("navbar4").style.transform ="scaleY(0%)" });
+
+
+    section.addEventListener("click",()=>{
         document.getElementById("navbar4").style.transform ="scaleY(0%)"; 
-    });  
+    });
+    section.addEventListener("click",()=>{
+            document.getElementById("navbar2").style.transform ="scaleY(0%)"; 
+        });  
 }
  Open();
 
