@@ -49,13 +49,13 @@ font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
     position: absolute;
     background-color: white;
    display: flex;
-   justify-content: space-evenly;
+   justify-content: space-around;
    align-items: right;
    width: 100%;
    color: #5e6d7a;
    border-top: 1px solid rgb(70, 70, 70);
    padding: 20px 0px;
- transform: translateY(-130%);
+ transform: translateY(-150%);
  
  /* display: none; */
  z-index: 100;
@@ -77,7 +77,20 @@ font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
 .navbar .liens2 ul li a:hover{
    color: rgb(179, 189, 197) ;
 }
-
+.fa-xmark{
+    font-size: 30px; 
+}
+#inputSearch{
+    width: 800px;
+    height: 80px;
+    border: none;
+    outline: none;
+    margin: 0 10px;
+    font-size: 20px;
+}
+#searching{
+   border-bottom: 1px solid #5e6d7a; 
+}
 /* ....................... End Navbar Section.....................*/
 /* ....................... Start Section One 1.....................*/
 .sect1{
@@ -177,17 +190,18 @@ border-color: gainsboro;
 /* ....................... End Section Two 2.....................*/
 
 /*.............................Media Qr......................*/
-@media screen and (max-width:890px){
-    .fabar i{
+@media screen and (max-width:1050px){
+.fabar i{
         display: block;
     }
-    .liens{
+.liens{
         display: none;
     }
 
 .sect1{
   height:15vh;
   padding: 40px;
+  /* background-position: left; */
     }
 .cont{
       position: relative;
@@ -195,18 +209,20 @@ border-color: gainsboro;
       margin-right: 0;
       padding: 40px;
     }
-    .cont h2{
+.cont h2{
         font-size: 30px;
     }
+.cont p{
+        font-size: 26px;
+    }
 .buttons{ 
-        padding-top: 120px;
+        padding-top: 140px;
         cursor: pointer;
         display: flex;
         justify-content: center;
         align-items: center;
     
     }
-
 .sect2{
     padding: 40px;
 }

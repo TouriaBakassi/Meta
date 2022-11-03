@@ -87,37 +87,159 @@ var dev = document.getElementById("dev");
 var doc=document.querySelector(".Doc");
 var blog=document.querySelector(".Blog");
 var more=document.querySelector(".More");
-var navbar1=document.querySelector(".navbar");
-var navbar2=document.querySelector(".navbar2");
-var navbar3=document.querySelector(".navbar3");
-var navbar4=document.querySelector("#navbar4");
-var nav= document.querySelector('.logo');
-var open= true;
-var open=true;
+var search=document.getElementById("search");
+var navbar=document.querySelector(".navbar");
+var navbarone=document.getElementById("navbar1");
+var navbartwo=document.getElementById("navbar2");
+var navbartree=document.getElementById("navbar3");
+var navbarfore=document.getElementById("navbar4");
+var navbarfive=document.getElementById("navbar5")
+var logo= document.querySelector('.logo');
+var login= document.getElementById("login");
+var prog=document.getElementById("prog");
 function Open() {
+    //.................Show Dev
        dev.addEventListener("click",()=>{
-   document.getElementById("navbar4").style.transform ="translateY(0%)" });
-   
-   nav.addEventListener("click",()=>{
-   document.getElementById("navbar4").style.transform ="scaleY(0%)" });      
-    
-   
-    doc.addEventListener("click",()=>{
-        document.getElementById("navbar2").style.transform ="translateY(0%)" 
+   navbarone.style.transform ="translateY(0%)" });
+     doc.addEventListener("click",()=>{
+   navbarone.style.transform ="scaleY(0%)" });
+    logo.addEventListener("click",()=>{
+    navbarone.style.transform ="scaleY(0%)" });      
+   section.addEventListener("click",()=>{
+        navbarone.style.transform ="scaleY(0%)"; 
     });
-    doc.addEventListener("click",()=>{
-            document.getElementById("navbar4").style.transform ="scaleY(0%)" });
+    prog.addEventListener("click",()=>{
+        navbarone.style.transform ="scaleY(0%)"; 
+    });
+    more.addEventListener("click",()=>{
+        navbarone.style.transform ="scaleY(0%)"; 
+    });
+    search.addEventListener("click",()=>{
+        navbarone.style.transform ="scaleY(0%)"; 
+    });
+//......................show Docs
+
+doc.addEventListener("click",()=>{
+        navbartwo.style.transform ="translateY(0%)" 
+    }); 
+    logo.addEventListener("click",()=>{
+        navbartwo.style.transform ="scaleY(0%)" });
+section.addEventListener("click",()=>{
+            navbartwo.style.transform ="scaleY(0%)"; 
+        });
+        prog.addEventListener("click",()=>{
+            navbartwo.style.transform ="scaleY(0%)"; 
+        });
+        more.addEventListener("click",()=>{
+            navbartwo.style.transform ="scaleY(0%)"; 
+        });
+        search.addEventListener("click",()=>{
+            navbartwo.style.transform ="scaleY(0%)"; 
+        });
+        dev.addEventListener("click",()=>{
+            navbartwo.style.transform ="scaleY(0%)"; 
+        });
+//........................show Programme
+
+prog.addEventListener("click",()=>{
+    navbartree.style.transform ="translateY(0%)" 
+}); 
+doc.addEventListener("click",()=>{
+        navbartree.style.transform ="scaleY(0%)"; 
+    });
+logo.addEventListener("click",()=>{
+    navbartree.style.transform ="scaleY(0%)" });
+section.addEventListener("click",()=>{
+        navbartree.style.transform ="scaleY(0%)"; 
+    });
+more.addEventListener("click",()=>{
+        navbartree.style.transform ="scaleY(0%)"; 
+    });
+search.addEventListener("click",()=>{
+        navbartree.style.transform ="scaleY(0%)"; 
+    });
+dev.addEventListener("click",()=>{
+        navbartree.style.transform ="scaleY(0%)"; 
+    });
+//........................show More
 
 
-    section.addEventListener("click",()=>{
-        document.getElementById("navbar4").style.transform ="scaleY(0%)"; 
+more.addEventListener("click",()=>{
+    navbarfore.style.transform ="translateY(0%)" 
+}); 
+doc.addEventListener("click",()=>{
+        navbarfore.style.transform ="scaleY(0%)"; 
     });
-    section.addEventListener("click",()=>{
-            document.getElementById("navbar2").style.transform ="scaleY(0%)"; 
-        });  
+logo.addEventListener("click",()=>{
+    navbarfore.style.transform ="scaleY(0%)" });
+section.addEventListener("click",()=>{
+        navbarfore.style.transform ="scaleY(0%)"; 
+    });
+prog.addEventListener("click",()=>{
+        navbarfore.style.transform ="scaleY(0%)"; 
+    });
+search.addEventListener("click",()=>{
+        navbarfore.style.transform ="scaleY(0%)"; 
+    });
+dev.addEventListener("click",()=>{
+        navbarfore.style.transform ="scaleY(0%)"; 
+    });
+
+    //........................show Search
+
+
+    search.addEventListener("click",()=>{
+    navbarfive.style.transform ="translateY(0%)" 
+}); 
+doc.addEventListener("click",()=>{
+        navbarfive.style.transform ="scaleY(0%)"; 
+    });
+logo.addEventListener("click",()=>{
+    navbarfive.style.transform ="scaleY(0%)" });
+section.addEventListener("click",()=>{
+        navbarfive.style.transform ="scaleY(0%)"; 
+    });
+prog.addEventListener("click",()=>{
+        navbarfive.style.transform ="scaleY(0%)"; 
+    });
+more.addEventListener("click",()=>{
+        navbarfive.style.transform ="scaleY(0%)"; 
+    });
+dev.addEventListener("click",()=>{
+        navbarfive.style.transform ="scaleY(0%)"; 
+    });
+// ..................login
+login.addEventListener("click",()=>{
+        navbar.style.transform ="scaleY(0%)"; 
+    });
+login.addEventListener("click",()=>{
+    window.location="https://www.google.fr";
+});
+//....................Blog
+blog.addEventListener("click",()=>{
+    navbar.style.transform ="scaleY(0%)"; 
+});
+blog.addEventListener("click",()=>{
+window.location="https://www.google.fr";
+});  
+//.............................. X icon 
+document.getElementById("icon5").addEventListener("click",()=>{
+    navbarfive.style.transform= "scaleY(0%)";  
+});
+document.getElementById("icon2").addEventListener("click",()=>{
+    navbartwo.style.transform= "scaleY(0%)";  
+});
+document.getElementById("icon3").addEventListener("click",()=>{
+    navbartree.style.transform= "scaleY(0%)";  
+});
+document.getElementById("icon4").addEventListener("click",()=>{
+    navbarfore.style.transform= "scaleY(0%)";  
+});
+document.getElementById("icon1").addEventListener("click",()=>{
+    navbarone.style.transform= "scaleY(0%)";  
+});
 }
  Open();
-
 
 // Navbar2.style.display="none";
     // Navbar3.style.display="none";
