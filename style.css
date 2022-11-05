@@ -262,14 +262,14 @@ color: black;
 text-decoration: underline;
 text-underline-position: under;
 /* padding-right: 8rem; */
-margin-top: 60px ;
+margin-top: 63px ;
 }
 .socialMeta .item .btnitem a{
 color: black;
 }
 .socialMeta .item .btnitem4{
     /* margin-bottom: 10px; */
-    margin-top: 0px ;
+    margin-top: 30px;
 }
 .socialMeta .item i{
     font-size: 50px;
@@ -285,7 +285,7 @@ color: black;
    }  
 .socialMeta .item .infoitem .whatsapp{
     color: rgb(2, 196, 2);
-    margin-top: 30px;
+    margin-top: 0px;
 }
 /* ....................... End Section Two 2.....................*/
 
