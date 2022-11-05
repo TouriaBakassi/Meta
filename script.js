@@ -97,10 +97,14 @@ var navbarfive=document.getElementById("navbar5")
 var logo= document.querySelector('.logo');
 var login= document.getElementById("login");
 var prog=document.getElementById("prog");
+
 function Open() {
     //.................Show Dev
-       dev.addEventListener("click",()=>{
-   navbarone.style.transform ="translateY(0%)" });
+     dev.addEventListener("click",()=>{
+         navbarone.style.transform ="translateY(0%)" 
+    });
+    // dev.addEventListener("click",()=>{
+    //         navbarone.classList.toggle("open") });
      doc.addEventListener("click",()=>{
    navbarone.style.transform ="scaleY(0%)" });
     logo.addEventListener("click",()=>{
@@ -117,6 +121,7 @@ function Open() {
     search.addEventListener("click",()=>{
         navbarone.style.transform ="scaleY(0%)"; 
     });
+   
 //......................show Docs
 
 doc.addEventListener("click",()=>{
@@ -240,7 +245,15 @@ document.getElementById("icon1").addEventListener("click",()=>{
 });
 }
  Open();
-
+var bar = document.querySelector(".fa-bars");
+var sidbar =document.querySelector(".sidebar")
+ function sidebar() {
+    bar.addEventListener("click",()=>{
+        sidbar.classList.toggle("active");
+        navbar.style.transform= "translateY(-200%)"; 
+    });
+ };
+sidebar();
 // Navbar2.style.display="none";
     // Navbar3.style.display="none";
     // Navbar4.style.display="none";
