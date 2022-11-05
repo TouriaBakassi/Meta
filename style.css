@@ -13,8 +13,11 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 5px 25px;
-    /* position: sticky;
-    z-index: 100; */
+    /* position: sticky;*/
+    z-index: 100; 
+    position: fixed;
+    background-color: white;
+    width: 100%;
 }
 .logo{
     padding-left: 40px;
@@ -23,6 +26,7 @@ nav{
     color: black;
     font-size: 25px;
     display: none;
+    padding-right: 60px;
 }
 .liens .lien,li{
    display: inline-block;
@@ -47,6 +51,7 @@ font-family:  system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 
 /* ....................... start Nav:details Section.....................*/
 .navbar{
     position: absolute;
+    top: 10%;
     background-color: white;
    display: flex;
    justify-content: space-around;
@@ -288,7 +293,27 @@ color: black;
     margin-top: 0px;
 }
 /* ....................... End Section Two 2.....................*/
+/* ....................... Start Section Three 3......................................*/
+.TOOLS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   width: 100%; 
+ 
+}
+.Tool{
+    width: 30%;
+    margin: 8px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 1px solid black;
+}
 
+/* ....................... End Section Three 3........................................*/
 
 
 
@@ -437,7 +462,7 @@ color: black;
 }
 .socialMeta .item{
     min-width:40vw; 
-   min-height: 25vh;
+   /* min-height: 25vh; */
    padding: 20px;
  }
  .socialMeta .item .infoitem h4{
