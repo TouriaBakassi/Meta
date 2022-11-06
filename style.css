@@ -303,16 +303,33 @@ color: black;
  
 }
 .Tool{
-    width: 30%;
-    margin: 8px;
+    width: 29%;
+    margin: 15px;
     padding: 10px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
     flex-direction: column;
     border: 1px solid black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
+.Tool h3{
+    font-size: 28px;
+  font-weight: 400;
+}
+.Tool p{
+    font-size: 20px;
+  font-weight: 400;
+}
+.Tool span{
+    font-size: 18px;
+  font-weight: 400;
+  padding: 10px;
+}
+.Tool i{
+    font-size: 40px;
+padding: 10px;
+}
 /* ....................... End Section Three 3........................................*/
 
 
