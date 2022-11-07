@@ -391,13 +391,46 @@ padding: 35px 0px;
 /* ....................... End Section Three 3........................................*/
 /* ....................... End Section fore 4........................................*/
 .sect4{
-padding: 2rem;
+padding:0 1rem 2rem 1rem;
 margin: 0;
 box-sizing: border-box;
 color: rgb(226, 148, 0);
 }
 .Smileimgdesc{
-
+background-color: #C3DCF5;
+display: flex;
+justify-content: center;
+align-items: center;
+/* flex-wrap: wrap; */
+width: 100%;
+}
+.smileimg{
+    width: 25%;
+   padding: 40px ;
+}
+.smileimg img{
+    width: 100%;  
+}
+.descrip{
+    width: 70%;
+    padding: 28px 60px ;
+}
+.descrip h3{
+    font-size: 32px;
+    margin: 0;
+    padding-top: 0;
+    font-weight: 500;
+}
+.descrip p{
+    font-size: 20px;
+    font-weight: 500;
+    width: 50%;
+}
+.More{
+   text-align: start;
+    margin: 0;
+    padding: 0;
+    
 }
 /* ....................... End Section fore 4........................................*/
 
@@ -648,3 +681,24 @@ nav{
 }
 /*.....................................Section Two...........................*/
 
+@media screen and (max-width:950px){
+    .Smileimgdesc{
+        flex-wrap: wrap; 
+        }
+.smileimg{
+        width: 100%;
+       
+    }
+    
+.descrip{
+        width: 100%; 
+    }
+.descrip h3{
+        font-size: 34px;
+        
+    }
+.descrip p{
+        font-size: 22px;
+        width: 100%;
+    }
+ }
