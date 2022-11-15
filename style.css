@@ -391,7 +391,7 @@ padding: 35px 0px;
 /* ....................... End Section Three 3........................................*/
 /* ....................... End Section fore 4........................................*/
 .sect4{
-padding:0 1rem 2rem 1rem;
+padding:0 1rem 5rem 1rem;
 margin: 0;
 box-sizing: border-box;
 color: rgb(226, 148, 0);
@@ -420,6 +420,7 @@ width: 100%;
     margin: 0;
     padding-top: 0;
     font-weight: 500;
+    letter-spacing: 1px;
 }
 .descrip p{
     font-size: 20px;
@@ -435,40 +436,55 @@ width: 100%;
 /* ....................... End Section fore 4........................................*/
 /* ....................... End Section five 5........................................*/
 .sect5{
-width: 100%;
+/* width: 100%; */
 display: flex;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
 color: black;
+background-color: #F0EBF5;
+padding: 50px 0px 50px 20px;
 }
-.sect5 .descrip{
-    width: 90%;
-    font-size: 15px;
-    font-weight: 400;
-
+.sect5 .descript{
+    width: 50%;
+     font-size: 20px;
+    font-weight: 400; 
+padding: 0px 50px;
+margin-bottom: 100px;
+color: #3C053C;
+}
+.descript h3{
+    font-size: 36px;
+    margin: 0;
+    padding-top: 0;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: rgb(60, 5, 60);
+}
+.descript p{
+    font-size: 16px;
+    color:#3C053C ;
 }
 .sect5 .photos{
-width:10%;
+width: 60%;
 display: flex;
-justify-content: space-around;
+justify-content: center;
+flex-wrap: wrap;
 align-items: center;
+margin-right: 80px;
+padding: 0px 80px ;
+}
+.sect5 .photos div{
+    height:150px;
+    width: 140px;
+    margin: 10px;
+    border: 1px solid #e6e1ec;
 }
 .sect5 .photos div img{
     width: 100%;
-    border: 1px solid gray;
+    height:100%;
+    /* border: 1px solid gray; */
 }
 /* ....................... End Section five 5........................................*/
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -628,6 +644,17 @@ align-items: center;
  .socialMeta .item4{
     min-height: 25vh;
  }
+ .sect5{
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+.sect5 .photos{
+        margin-right: 0px;
+        } 
+.sect5 .descript{
+      padding: 0px ;
+      text-align: center;
+        }          
 }
 
 
