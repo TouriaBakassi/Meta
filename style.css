@@ -372,8 +372,8 @@ color: black;
 .Tool i, .SeeAll i{
 font-size: 20px;
 padding: 10px;
-color: white;
-background-color: #47525b;
+color: rgb(167, 167, 167);
+/* background-color: #47525b; */
 border: 1px solid gainsboro;
 border-radius: 50%;
 }
@@ -388,7 +388,7 @@ padding: 35px 0px;
    color: gray;
     }
 /* ....................... End Section Three 3........................................*/
-/* ....................... End Section fore 4........................................*/
+/* ....................... Start Section fore 4........................................*/
 .sect4{
 padding:0 1rem 5rem 1rem;
 margin: 0;
@@ -436,8 +436,16 @@ width: 100%;
    color:rgb(243, 190, 93);
      
  }
+ .More i, .More i{
+    font-size: 20px;
+    padding: 10px;
+    color:rgb(226, 148, 0) ;
+    /* background-color: #47525b; */
+    border: 1px solid gainsboro;
+    border-radius: 50%;
+    }
 /* ....................... End Section fore 4........................................*/
-/* ....................... End Section five 5........................................*/
+/* ....................... Start Section five 5........................................*/
 .sect5{
 /* width: 100%; */
 display: flex;
@@ -491,6 +499,16 @@ padding: 0px 80px ;
     /* border: 1px solid gray; */
 position: relative;
 }
+.stories{
+    text-align: start;
+     margin: 0;
+     padding: 0;
+     
+ }
+ .stories:hover{
+    color:rgb(161, 161, 161);
+      
+  }
 /* .sect5 .photos .photo img:hover{
     /* display: none; 
 }
@@ -511,6 +529,8 @@ height:100%;
     
     }  */
 /* ....................... End Section five 5........................................*/
+/* ....................... Start Section Six 6........................................*/
+
 .NEWS{
     flex-wrap: wrap;
     padding-bottom: 0px;
@@ -539,6 +559,69 @@ height:100%;
 .news h3:hover{
 color: grey;
 }
+/* ....................... End Section Six 6........................................*/
+/* ....................... Start Section Seven 7........................................*/
+.sect7{
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: rgb(160, 58, 37);
+  background-color: rgb(251, 214, 183);
+
+}
+.team{
+    width: 50%;
+    height: 48vh;
+
+}
+.team img{
+object-fit: cover;
+height: 100%;
+width: 100%;
+
+/* transform: scale(1.02); */
+
+}
+.twodescrip{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0px;
+    
+
+}
+.someword{
+    padding: 20px; 
+}
+.someword h3{
+font-size: 26px;
+}
+.someword p{
+    font-size: 17px;
+    font-weight: 400;
+   width: 100%;
+    }
+.circles{
+        text-align: start;
+         margin: 0;
+         padding: 0;
+         font-size: 15px;
+         
+     }
+.circles:hover{
+        color:rgb(170, 94, 79);
+          
+      }
+ .circles i, .circles i{
+        font-size: 20px;
+        padding: 10px;
+        color:rgb(160, 58, 37) ;
+        /* background-color: #47525b; */
+        border: 1px solid gainsboro;
+        border-radius: 50%;
+        }      
+/* ................................End Section Seven 7.................................*/
 
 
 
@@ -707,7 +790,16 @@ color: grey;
         } 
 .news{
      min-height:50vh ;
-        }              
+        } 
+ /*....................................Sect 7......................................*/
+           
+.twodescrip{
+   
+    flex-wrap: wrap;
+      }  
+.someword{
+        padding: 15px; 
+    }                   
 }
 
 
@@ -806,5 +898,18 @@ nav{
     .news{
         width: 100%;
         min-height:fit-content ;
-    }  
+    } 
+    /*....................................Sect 7......................................*/
+
+    .sect7{
+        flex-wrap: wrap;
+        }
+    .team{
+         width: 100%;
+          }
+                
+    .twodescrip{
+       width: 100%;
+        flex-wrap: wrap;
+          }
  }
