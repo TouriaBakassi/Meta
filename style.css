@@ -622,6 +622,23 @@ font-size: 26px;
         border-radius: 50%;
         }      
 /* ................................End Section Seven 7.................................*/
+/* ....................................Start Footer ...................................*/
+.footer{
+    color: black;
+}
+.resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.row{
+    width: 20%;
+}
+.copyright{
+    border-top: 2px solid black;
+}
+/* ......................................End Footer.....................................*/
 
 
 
