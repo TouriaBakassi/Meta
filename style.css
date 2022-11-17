@@ -625,19 +625,109 @@ font-size: 26px;
 /* ....................................Start Footer ...................................*/
 .footer{
     color: black;
+    padding: 40px 160px 0px 160px;
+    background-color: #f7f7f7;
 }
 .resume{
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-bottom: 1px solid rgb(59, 59, 59);
 }
 .row{
     width: 20%;
 }
-.copyright{
-    border-top: 2px solid black;
+.row h4{
+    padding-left: 2px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    }
+.row ul{
+padding: 0px;
+list-style: none;
+/* width: 80%; */
 }
+.row ul li{
+margin-left: 0px;
+display: block;
+font-size: 13px;
+padding: 2px;
+}
+.row ul li a{
+ color: #1f2327;
+ text-decoration: none;
+    }
+.row ul li a:hover{
+        color: gray;
+           } 
+.row1{
+    padding-top: 30px;
+width: 32%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.row1 #metalogo{
+    width: 50%;
+    margin-bottom: 52px;
+}  
+.row1 #metalogo img{
+    width: 100%;
+}
+.row1 .reseaux p{
+    font-size: 12px;
+} 
+.row1 .reseaux .allreseaux{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.row1 .reseaux .allreseaux i{
+    width: 14%;
+    margin: 10px 20px 10px 0px;
+    font-size: 30px;
+    color: #343c42;
+}
+.row1 .reseaux .allreseaux i:hover{
+    color: #47525b;
+}    
+.copyright{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-top: 10px 0;
+}
+.copyright ul{
+    display: inline-block;
+}
+.copyright ul li{
+   font-size: 15px;
+   list-style: none;
+   padding:0 ;
+   margin:30px 15px ;
+}
+.copyright ul li a{
+    text-decoration: none;
+    color:#1b1e22;
+ }
+ .copyright ul li a:hover{
+    
+    color:gray;
+ }
+ .copyright ul li #select{
+    padding: 6px 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+   background-color: transparent;
+
+}
+ 
 /* ......................................End Footer.....................................*/
 
 
@@ -816,7 +906,15 @@ font-size: 26px;
       }  
 .someword{
         padding: 15px; 
-    }                   
+    } 
+    /*..........................Footer...........................  */
+    .footer{
+       
+        padding: 30px ;
+    }
+    /* .row{
+        width: 50%;
+    } */
 }
 
 
@@ -929,4 +1027,12 @@ nav{
        width: 100%;
         flex-wrap: wrap;
           }
+/* .....................................Footer.............................. */
+.footer{
+       
+    padding: 30px 20px ;
+}
+.row{
+            width: 100%;
+        }
  }
