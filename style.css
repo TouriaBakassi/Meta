@@ -508,8 +508,6 @@ li {
   align-items: center;
   opacity: 0;
  transition:all 0.2s ease-in-out;
- font-weight: 100;
- font-size: 20px;
 }
 .sect5 .photos .photo .title h4{
  font-weight: 400;
@@ -534,8 +532,7 @@ li {
 .sect5 .photos .photo .title6{
   background-color: rgb(245, 165, 160);
 }
-.sect5 .photos .photo:hover .title
-{
+.sect5 .photos .photo:hover .title{
   width: 100%;
   opacity: 1;
  transition: all 0.2s ease-in-out;
