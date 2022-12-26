@@ -168,38 +168,33 @@ blog.addEventListener("click",()=>{
 
  
 //.............................. X icon 
-document.getElementById("icon5").addEventListener("click",()=>{
-    navbarfive.style.transform= "scaleY(0%)";  
-});
-document.getElementById("icon2").addEventListener("click",()=>{
-    navbartwo.style.transform= "scaleY(0%)";  
-});
-document.getElementById("icon3").addEventListener("click",()=>{
-    navbartree.style.transform= "scaleY(0%)";  
-});
-document.getElementById("icon4").addEventListener("click",()=>{
-    navbarfore.style.transform= "scaleY(0%)";  
-});
-document.getElementById("icon1").addEventListener("click",()=>{
-    navbarone.style.transform= "scaleY(0%)";  
-});
-// ...........................Sidbar
-
-var bar = document.querySelector(".fa-bars");
-var sidbar =document.querySelector(".sidebar")
- function sidebar() {
-    bar.addEventListener("click",()=>{
-        sidbar.classList.toggle("active");
-        navbar.style.transform= "translateY(-200%)"; 
+let icons= document.querySelectorAll(".icon");
+icons.forEach((icon)=>{
+    icon.addEventListener("click",()=>{
+        navbar.forEach((item)=>{
+            item.style.transform ="scaleY(0%)";
+           });
     });
- };
-sidebar();
-// Navbar2.style.display="none";
-    // Navbar3.style.display="none";
-    // Navbar4.style.display="none";
-//     Navbar2.classList.contains("close");
-//    Navbar3.classList.contains("close");
-//    Navbar4.classList.contains("close"); 
+});
+
+
+// ..............................Sidbar
+
+let bar = document.querySelector(".fa-bars");
+let sidbar =document.querySelector(".sidebar");
+let iconX= document.getElementById("iconX");
+
+bar.addEventListener("click",()=>{
+        sidbar.classList.toggle("active");
+        navbar.forEach((item)=>{
+            item.style.transform ="scaleY(0%)";
+           });
+    });
+iconX.addEventListener("click",()=>{
+sidbar.classList.remove("active");
+});
+
+
 
 
   
