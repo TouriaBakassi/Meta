@@ -7,7 +7,7 @@ var btn5 = document.querySelector("#img5");
 var titre = document.querySelector(".titre");
 var text = document.querySelector(".text");
 
-function oussama() {
+function handlChange() {
   btn1.addEventListener("click", () => {
     section.style.background = "url(./imag1.jpg)";
     section.style.backgroundRepeat = "no-repeat";
@@ -81,14 +81,14 @@ function oussama() {
     document.querySelector(".cont a").style.color = "white";
   });
    };
-  oussama();
+   handlChange();
 /* ....................... start Navbar Section.....................*/
 var dev = document.getElementById("dev");
 var doc=document.querySelector(".Doc");
 var blog=document.querySelector(".Blog");
 var more=document.querySelector(".More");
 var search=document.getElementById("search");
-var navbar=document.querySelector(".navbar");
+var navbar=document.querySelectorAll(".navbar");
 var navbarone=document.getElementById("navbar1");
 var navbartwo=document.getElementById("navbar2");
 var navbartree=document.getElementById("navbar3");
@@ -98,135 +98,75 @@ var logo= document.querySelector('.logo');
 var login= document.getElementById("login");
 var prog=document.getElementById("prog");
 
-function Open() {
+
     //.................Show Dev
      dev.addEventListener("click",()=>{
-         navbarone.style.transform ="translateY(0%)" 
+       navbar.forEach((item)=>{
+        item.style.transform ="scaleY(0%)";
+       });
+     navbarone.style.transform ="translateY(0%)" 
     });
-    // dev.addEventListener("click",()=>{
-    //         navbarone.classList.toggle("open") });
-     doc.addEventListener("click",()=>{
-   navbarone.style.transform ="scaleY(0%)" });
-    logo.addEventListener("click",()=>{
-    navbarone.style.transform ="scaleY(0%)" });      
-   section.addEventListener("click",()=>{
-        navbarone.style.transform ="scaleY(0%)"; 
-    });
-    prog.addEventListener("click",()=>{
-        navbarone.style.transform ="scaleY(0%)"; 
-    });
-    more.addEventListener("click",()=>{
-        navbarone.style.transform ="scaleY(0%)"; 
-    });
-    search.addEventListener("click",()=>{
-        navbarone.style.transform ="scaleY(0%)"; 
-    });
+   
    
 //......................show Docs
 
 doc.addEventListener("click",()=>{
-        navbartwo.style.transform ="translateY(0%)" 
+    navbar.forEach((item)=>{
+        item.style.transform ="scaleY(0%)";
+       });      
+      navbartwo.style.transform ="translateY(0%)" 
     }); 
-    logo.addEventListener("click",()=>{
-        navbartwo.style.transform ="scaleY(0%)" });
-section.addEventListener("click",()=>{
-            navbartwo.style.transform ="scaleY(0%)"; 
-        });
-        prog.addEventListener("click",()=>{
-            navbartwo.style.transform ="scaleY(0%)"; 
-        });
-        more.addEventListener("click",()=>{
-            navbartwo.style.transform ="scaleY(0%)"; 
-        });
-        search.addEventListener("click",()=>{
-            navbartwo.style.transform ="scaleY(0%)"; 
-        });
-        dev.addEventListener("click",()=>{
-            navbartwo.style.transform ="scaleY(0%)"; 
-        });
+
 //........................show Programme
 
 prog.addEventListener("click",()=>{
-    navbartree.style.transform ="translateY(0%)" 
+    navbar.forEach((item)=>{
+        item.style.transform ="scaleY(0%)";
+       });  
+      navbartree.style.transform ="translateY(0%)" 
 }); 
-doc.addEventListener("click",()=>{
-        navbartree.style.transform ="scaleY(0%)"; 
-    });
-logo.addEventListener("click",()=>{
-    navbartree.style.transform ="scaleY(0%)" });
-section.addEventListener("click",()=>{
-        navbartree.style.transform ="scaleY(0%)"; 
-    });
-more.addEventListener("click",()=>{
-        navbartree.style.transform ="scaleY(0%)"; 
-    });
-search.addEventListener("click",()=>{
-        navbartree.style.transform ="scaleY(0%)"; 
-    });
-dev.addEventListener("click",()=>{
-        navbartree.style.transform ="scaleY(0%)"; 
-    });
+
 //........................show More
 
 
 more.addEventListener("click",()=>{
-    navbarfore.style.transform ="translateY(0%)" 
+    navbar.forEach((item)=>{
+        item.style.transform ="scaleY(0%)";
+       });
+        navbarfore.style.transform ="translateY(0%)" 
 }); 
-doc.addEventListener("click",()=>{
-        navbarfore.style.transform ="scaleY(0%)"; 
-    });
-logo.addEventListener("click",()=>{
-    navbarfore.style.transform ="scaleY(0%)" });
-section.addEventListener("click",()=>{
-        navbarfore.style.transform ="scaleY(0%)"; 
-    });
-prog.addEventListener("click",()=>{
-        navbarfore.style.transform ="scaleY(0%)"; 
-    });
-search.addEventListener("click",()=>{
-        navbarfore.style.transform ="scaleY(0%)"; 
-    });
-dev.addEventListener("click",()=>{
-        navbarfore.style.transform ="scaleY(0%)"; 
-    });
+
 
     //........................show Search
 
 
     search.addEventListener("click",()=>{
-    navbarfive.style.transform ="translateY(0%)" 
+        navbar.forEach((item)=>{
+            item.style.transform ="scaleY(0%)";
+           });
+        navbarfive.style.transform ="translateY(0%)" 
 }); 
-doc.addEventListener("click",()=>{
-        navbarfive.style.transform ="scaleY(0%)"; 
-    });
-logo.addEventListener("click",()=>{
-    navbarfive.style.transform ="scaleY(0%)" });
-section.addEventListener("click",()=>{
-        navbarfive.style.transform ="scaleY(0%)"; 
-    });
-prog.addEventListener("click",()=>{
-        navbarfive.style.transform ="scaleY(0%)"; 
-    });
-more.addEventListener("click",()=>{
-        navbarfive.style.transform ="scaleY(0%)"; 
-    });
-dev.addEventListener("click",()=>{
-        navbarfive.style.transform ="scaleY(0%)"; 
-    });
+
 // ..................login
 login.addEventListener("click",()=>{
-        navbar.style.transform ="scaleY(0%)"; 
+    navbar.forEach((item)=>{
+        item.style.transform ="scaleY(0%)";
+       });
+ window.location="https://www.google.fr"; 
     });
-login.addEventListener("click",()=>{
-    window.location="https://www.google.fr";
-});
+// login.addEventListener("click",()=>{
+   
+// });
 //....................Blog
 blog.addEventListener("click",()=>{
-    navbar.style.transform ="scaleY(0%)"; 
+    navbar.forEach((item)=>{
+        item.style.transform ="scaleY(0%)";
+       });
+   window.location="https://www.google.fr"; 
 });
-blog.addEventListener("click",()=>{
-window.location="https://www.google.fr";
-});  
+
+
+ 
 //.............................. X icon 
 document.getElementById("icon5").addEventListener("click",()=>{
     navbarfive.style.transform= "scaleY(0%)";  
@@ -243,8 +183,8 @@ document.getElementById("icon4").addEventListener("click",()=>{
 document.getElementById("icon1").addEventListener("click",()=>{
     navbarone.style.transform= "scaleY(0%)";  
 });
-}
- Open();
+// ...........................Sidbar
+
 var bar = document.querySelector(".fa-bars");
 var sidbar =document.querySelector(".sidebar")
  function sidebar() {
