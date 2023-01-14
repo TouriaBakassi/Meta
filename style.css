@@ -605,13 +605,11 @@ li {
 }
 .team {
   width: 50%;
-  height: 48vh;
 }
 .team img {
   object-fit: cover;
-  height: 100%;
   width: 100%;
-
+vertical-align: middle;
   /* transform: scale(1.02); */
 }
 .twodescrip {
@@ -904,7 +902,11 @@ li {
   .team {
     width: 100%;
   }
-
+  .team img {
+    object-fit: contain;
+    /* height: 100%; */
+    width: 100%;
+  }
   .twodescrip {
     width: 100%;
     flex-wrap: wrap;
